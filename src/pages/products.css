@@ -1,0 +1,35 @@
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.img-smartphones {
+    height: 300px;
+}
+
+span {
+    padding: 0 10px 0 0;
+}
+
+span:last-child {
+    border-width: 0;
+}
+
+.product-info {
+    margin: 25px 0 0 0;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    border: 2px solid rgb(219, 219, 219);
+    border-width: 2px 0 0 0;
+    border-radius: 4px;
+
+}
+
+.fragrances img {
+    height: 250px;
+}
