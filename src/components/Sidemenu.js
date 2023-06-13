@@ -5,22 +5,22 @@ import { useNavigate } from 'react-router-dom';
 const menuItems = [
     {
         label: 'Dashboard',
-        key: '/',
+        key: '/HW-33',
         icon: <DashboardOutlined />
     },
     {
         label: 'Users',
-        key: '/users',
+        key: '/HW-33/users',
         icon: <UserOutlined />
     },
     {
         label: 'Products',
-        key: '/products',
+        key: '/HW-33/products',
         icon: <ShoppingCartOutlined />
     },
     {
         label: 'System Configuration',
-        key: '/system',
+        key: '/HW-33/system',
         icon: <SettingOutlined />
     }
 ]

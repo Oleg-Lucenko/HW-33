@@ -13,19 +13,19 @@ import './App.css';
 
 const routes = createBrowserRouter([{
         path: '/',
-    element: <Root />,
+        element: <Root />,
         errorElement: <Error />,
         children: [
             {
-                path: '/',
+                path: '/HW-33',
                 element: <Dashboard />
             },
             {
-                path: '/users',
+                path: '/HW-33/users',
                 element: <Users />
             },
             {
-                path: '/products',
+                path: '/HW-33/products',
                 element: <Products />
             }
         ]

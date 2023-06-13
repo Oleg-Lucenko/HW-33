@@ -24,9 +24,11 @@ function Products() {
 
             <Typography.Title level={5}>Smartphones</Typography.Title>
 
-            <div className='products-container smartphones'>
+            <ul className='products-container smartphones'>
 
             {products.filter(products => products.category === 'smartphones').map((item) => (
+                
+                <li key={item.id}>
                             <Card
                             style={{
                             width: 250,
@@ -37,7 +39,7 @@ function Products() {
                                 className='img-smartphones'
                             />
                             }
-                
+
                             >
                             <Meta
                             title={item.title}
@@ -51,54 +53,60 @@ function Products() {
                             </div>
 
                             </Card>
+                </li>
 
             ))}
 
-            </div>
+            </ul>
 
 
             <Typography.Title level={5}>Laptops</Typography.Title>
 
-            <div className='products-container laptops'>
+            <ul className='products-container laptops'>
 
 
             {products.filter(products => products.category === 'laptops').map((item) => (
-                            <Card
-                            style={{
-                            width: 250,
-                            }}
-                            cover={
-                            <img
-                                src={item.images[0]}
-                                className='img-laptops'
-                            />
-                            }
                 
-                            >
-                            <Meta
-                            title={item.title}
-                            description={item.description}
-                            />
+                <li key={item.id}>                            
+                    <Card
+                    style={{
+                    width: 250,
+                    }}
+                    cover={
+                    <img
+                        src={item.images[0]}
+                        className='img-laptops'
+                    />
+                    }
+
+                    >
+                    <Meta
+                    title={item.title}
+                    description={item.description}
+                    />
 
 
-                            <div className='product-info'>
-                                <span>Price: {item.price}</span>
-                                <span>Rating: {item.rating}</span>
-                                <span>Brand: {item.brand}</span>
-                            </div>
-                            </Card>
+                    <div className='product-info'>
+                        <span>Price: {item.price}</span>
+                        <span>Rating: {item.rating}</span>
+                        <span>Brand: {item.brand}</span>
+                    </div>
+                    </Card>
+                </li>
 
             ))}
 
-            </div>
+            </ul>
 
 
             <Typography.Title level={5}>Frangrances</Typography.Title>
 
-            <div className='products-container fragrances'>
+            <ul className='products-container fragrances'>
 
 
             {products.filter(products => products.category === 'fragrances').map((item) => (
+
+                <li key={item.id}>
                             <Card
                             style={{
                             width: 250
@@ -109,7 +117,7 @@ function Products() {
                                 className='img-fragrances'
                             />
                             }
-                
+
                             >
                             <Meta
                             title={item.title}
@@ -122,17 +130,20 @@ function Products() {
                                 <span>Brand: {item.brand}</span>
                             </div>
                             </Card>
+                </li>
 
             ))}
 
-            </div>
+            </ul>
 
 
             <Typography.Title level={5}>Skincare</Typography.Title>
 
-            <div className='products-container skincare'>
+            <ul className='products-container skincare'>
 
             {products.filter(products => products.category === 'skincare').map((item) => (
+
+                <li key={item.id}>
                             <Card
                             style={{
                             width: 250,
@@ -143,7 +154,7 @@ function Products() {
                                 className='img-skincare'
                             />
                             }
-                
+
                             >
                             <Meta
                             title={item.title}
@@ -156,17 +167,20 @@ function Products() {
                                 <span>Brand: {item.brand}</span>
                             </div>
                             </Card>
+                </li>
 
             ))}
 
-            </div>
+            </ul>
 
 
             <Typography.Title level={5}>Groceries</Typography.Title>
 
-            <div className='products-container groceries'>
+            <ul className='products-container groceries'>
 
                 {products.filter(products => products.category === 'groceries').map((item) => (
+
+                    <li key={item.id}>
                             <Card
                             style={{
                             width: 250,
@@ -177,7 +191,7 @@ function Products() {
                                 className='img-groceries'
                             />
                             }
-                
+
                             >
                             <Meta
                             title={item.title}
@@ -190,17 +204,20 @@ function Products() {
                                 <span>Brand: {item.brand}</span>
                             </div>
                             </Card>
+                    </li>
 
                 ))}
 
-            </div>
+            </ul>
 
 
             <Typography.Title level={5}>Home decoration</Typography.Title>
 
-            <div className='products-container home-decoration'>
+            <ul className='products-container home-decoration'>
 
             {products.filter(products => products.category === 'home-decoration').map((item) => (
+
+                <li key={item.id}>
                             <Card
                             style={{
                             width: 250,
@@ -225,10 +242,11 @@ function Products() {
                                 <span>Brand: {item.brand}</span>
                             </div>
                             </Card>
+                </li>
 
             ))}
 
-            </div>
+            </ul>
 
             </div>
 
